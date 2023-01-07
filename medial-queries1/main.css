@@ -1,3 +1,55 @@
+*{
+  border: 1px solid magenta;
+}
+
 body {
   background: blanchedalmond;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.container div{
+  height: 200px;
+}
+
+.a{
+  border: 2px solid navy;
+  background-color: lightblue;
+  width: 100%;
+}
+
+.b{
+  border: 2px solid navy;
+  background-color: lightblue;
+  flex: 4;
+}
+
+.c{
+  border: 2px solid navy;
+  background-color: lightblue;
+  flex: 1;
+}
+
+/*For Decoration*/
+.a::before{
+  content: "a";
+  font-size: xx-large;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.b::before{
+  content: "b";
+  font-size: xx-large;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.c::before{
+  content: "c";
+  font-size: xx-large;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
