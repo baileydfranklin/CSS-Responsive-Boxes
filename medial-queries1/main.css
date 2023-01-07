@@ -9,11 +9,13 @@ body {
 .container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  align-items: stretch;
 }
 
 .container div{
-  height: 200px;
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .a{
@@ -25,6 +27,7 @@ body {
 .b{
   border: 2px solid navy;
   background-color: lightblue;
+  min-height: 100px;
   flex: 4;
 }
 
@@ -32,9 +35,19 @@ body {
   border: 2px solid navy;
   background-color: lightblue;
   flex: 1;
+  min-height: 100px;
 }
 
-/*For Decoration*/
+@media (max-width: 600px){
+  .container{
+    flex-direction: column;
+  }
+  .c{
+    min-height: 50px;
+  }
+}
+
+/*____________________FOR DECORATION____________________*/
 .a::before{
   content: "a";
   font-size: xx-large;
