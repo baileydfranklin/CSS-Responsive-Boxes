@@ -7,7 +7,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 10px;
-  justify-content: space-between;
 }
 .container div{
   border: 1px solid navy;
@@ -33,20 +32,20 @@ body {
 .c{
   order: 3;
   flex-basis: 20%;
-  /*transform: translateY(-100px);*/
+  transform: translateY(-100px);
   flex-shrink: 0;
 }
 
 .d{
   order: 4;
   flex-basis: 20%;
-  /*transform: translateY(-100px);*/
+  transform: translateY(-100px);
 flex-shrink: 0;
 }
 .e{
   order: 5;
   flex-basis: 20%;
-  /*transform: translateY(-100px);*/
+  transform: translateY(-100px);
 flex-shrink: 0;
 }
 
