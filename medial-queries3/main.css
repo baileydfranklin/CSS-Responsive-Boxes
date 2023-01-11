@@ -1,5 +1,5 @@
 body {
-  background: papayawhip;
+  background: ivory;
 }
 
 .container{
@@ -7,13 +7,14 @@ body {
   grid-template-columns: repeat(4,100px);
   column-gap: 20px;
   row-gap: 10px;
+  justify-content: center; /*Can be used for the Grid display as well! Not just Flexbox.*/
 }
 p{
-  border: 1px solid navy;
-  background-color: lightblue;
+  border: 2px solid purple;
   margin: 0;
 
   font-size: 50px;
+  color: ivory;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,18 +23,22 @@ p{
 
 .a{
   grid-column: span 4;
+  background-image: linear-gradient(45deg, black 50%, red 1%, black);
 }
 
 .b,.c,.d{
   grid-row: 2/span 1;
+  background-image: linear-gradient(45deg, black 50%, green 1%, black);
 }
 
 .h{
   grid-row: span 2;
+  background-image: linear-gradient(45deg, black 50%, blue 1%, black);
 }
 
 .e,.f,.g{
   grid-row: 3/span 1;
+  background-image: linear-gradient(45deg, black 50%, orange 1%, black);
 }
 
 @media (max-width: 500px){
